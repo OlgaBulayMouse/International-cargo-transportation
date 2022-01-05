@@ -3,32 +3,32 @@ export const Form = () => {
     return (
         <form>
             <fieldset className='fieldset'>
-                <legend style={{ color: 'blue' }}>Customer contact information</legend>
+                <legend style={{ color: '#006633' }}>Customer contact information</legend>
                 <p>
                     <label for={'name'}>FULL NAME or the name of the legal entity<em style={{ color: 'red' }} >*</em></label>
-                    <input type={'text'}></input>
+                    <input style={{backgroundColor: 'rgb(211, 241, 231)'}} type={'text'}></input>
                 </p>
                 <p>
                     <label for={'email'}>E-mail</label>
-                    <input type={'email'}></input>
+                    <input style={{backgroundColor: 'rgb(211, 241, 231)'}} type={'email'}></input>
                 </p>
                 <p>
                     <label for={'number'}>Contact number<em style={{ color: 'red' }}>*</em></label>
-                    <input type={'number'}></input>
+                    <input style={{backgroundColor: 'rgb(211, 241, 231)'}} type={'number'}></input>
                 </p>
                 <p>
-                    <input type={'submit'} value={'Send'} style={{ backgroundColor: '#99ffcc', color: 'blue' }}></input>
+                    <input type={'submit'} value={'Send'} style={{ backgroundColor: 'rgb(211, 241, 231)', color: '#006633' }}></input>
                 </p>
             </fieldset>
             <fieldset className='fieldset'>
-                <legend style={{ color: 'blue' }}>Desired Route</legend>
+                <legend style={{ color: '#006633' }}>Desired Route</legend>
                 <p>
                     <label for={'name'}>Place of shipment<em style={{ color: 'red' }}>*</em></label>
-                    <input type={'text'}></input>
+                    <input style={{backgroundColor: 'rgb(211, 241, 231)'}} type={'text'}></input>
                 </p>
                 <p>
                     <label for={'name'}>Unloading place <em style={{ color: 'red' }}>*</em></label>
-                    <input type={'text'}></input>
+                    <input style={{backgroundColor: 'rgb(211, 241, 231)'}} type={'text'}></input>
                 </p>
                 <p>
                     <label htmlFor={'connection'}>Сargo needs escort</label>
@@ -39,7 +39,7 @@ export const Form = () => {
                     <input type={'radio'} name={'escort'} value={'no escort'} id={'conn'} />
                 </p>
                 <p>
-                    <input type={'submit'} value={'Send'} style={{ backgroundColor: '#99ffcc', color: 'blue' }}></input>
+                    <input type={'submit'} value={'Send'} style={{ backgroundColor: 'rgb(211, 241, 231)', color: '#006633' }}></input>
                 </p>
             </fieldset>
         </form>

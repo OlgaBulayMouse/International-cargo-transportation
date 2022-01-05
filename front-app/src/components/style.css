@@ -1,4 +1,10 @@
+
+body {
+    background-color: rgb(211, 241, 231);
+}
 .fieldset {
-    background: #cfffff;
-    
+    background-image: url(/img/avto7.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 };
