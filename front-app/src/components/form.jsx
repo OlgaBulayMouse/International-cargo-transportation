@@ -10,12 +10,21 @@ export const Form = () => {
     const [formDate, setFormDate] = useState({
         fullname: '',
         mail: '',
-        telephone: 0,
+        telephone: '',
         escort: 'yes',
 
     });
     const handlerFormDate = event => {
         event.preventDefault();
+        fetch('http://localhost:2022', {
+        method: 'POST',
+        headers: {
+            'content-type': 'application/json',
+        },
+        body: 'JSON.stringify(formDate)'
+        })
+        .then(res => console.log(res))
+        .catch(error => console.log(error));
         console.log(formDate);
     };
 
